@@ -1,0 +1,99 @@
+# exercice3
+>> git push -u origin main\Bureau\tp3>
+PS C:\Users\boung\OneDrive\Bureau\tp3> git init
+Reinitialized existing Git repository in C:/Users/boung/OneDrive/Bureau/tp3/.git/
+PS C:\Users\boung\OneDrive\Bureau\tp3> git add .
+PS C:\Users\boung\OneDrive\Bureau\tp3> git commit -m "commit1"
+[main (root-commit) 6cac215] commit1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text.txt
+PS C:\Users\boung\OneDrive\Bureau\tp3> git remote add origin https://github.com/MatthieuVhl/exercice3.git
+>>  git branch -M main
+>> git push -u origin main
+error: remote origin already exists.
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 205 bytes | 205.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MatthieuVhl/exercice3.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\boung\OneDrive\Bureau\tp3> git branch exo3
+PS C:\Users\boung\OneDrive\Bureau\tp3> git checkout exo3
+Switched to branch 'exo3'
+PS C:\Users\boung\OneDrive\Bureau\tp3> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\boung\OneDrive\Bureau\tp3> git add .   
+PS C:\Users\boung\OneDrive\Bureau\tp3> git commit -m "ajoute fichier branch master"
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 352 bytes | 352.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/MatthieuVhl/exercice3.git
+   6cac215..fd14f04  main -> main
+PS C:\Users\boung\OneDrive\Bureau\tp3>
+
+
+
+
+
+                                     > git branch matthieu
+PS C:\Users\boung\OneDrive\Bureau\tp3> checkout matthieu
+checkout : Le terme «checkout» n'est pas reconnu comme nom d'applet de 
+commande, fonction, fichier de script ou programme exécutable.
+Vérifiez l'orthographe du nom, ou si un chemin d'accès existe,
+vérifiez que le chemin d'accès est correct et réessayez.
+Au caractère Ligne:1 : 1
++ checkout matthieu
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (checkout:String) [], Co  
+   mmandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\boung\OneDrive\Bureau\tp3> git checkout matthieu
+Switched to branch 'matthieu'
+PS C:\Users\boung\OneDrive\Bureau\tp3> git branch -l
+  exo3
+  main
+* matthieu
+PS C:\Users\boung\OneDrive\Bureau\tp3> git push -u origin matthieu
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'matthieu' on GitHub by visiting:     
+remote:      https://github.com/MatthieuVhl/exercice3/pull/new/matthieu 
+remote:
+To https://github.com/MatthieuVhl/exercice3.git
+ * [new branch]      matthieu -> matthieu
+branch 'matthieu' set up to track 'origin/matthieu'.
+PS C:\Users\boung\OneDrive\Bureau\tp3> git commit -m "2eme branches"
+On branch matthieu
+Your branch is up to date with 'origin/matthieu'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)        
+        fichier_branche_votre_matthieu.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\boung\OneDrive\Bureau\tp3> git push -u origin matthieu  
+Everything up-to-date
+branch 'matthieu' set up to track 'origin/matthieu'.
+PS C:\Users\boung\OneDrive\Bureau\tp3> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\boung\OneDrive\Bureau\tp3> git commit -m "seconde branche"
+On branch matthieu
+Your branch is up to date with 'origin/matthieu'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)        
+        fichier_branche_votre_matthieu.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\boung\OneDrive\Bureau\tp3> git push -u origin matthieu
+Everything up-to-date
+branch 'matthieu' set up to track 'origin/matthieu'.
+PS C:\Users\boung\OneDrive\Bureau\tp3>
